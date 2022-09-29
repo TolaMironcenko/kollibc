@@ -17,6 +17,6 @@ unsigned short htons(unsigned short a);
 
 int inet_aton(const char *cp, struct in_addr *inp);
 const char *inet_ntop(int af, const void *restrict src,
-                             char *restrict dst, int size);
+                      char *restrict dst, int size);
 
 #endif // IN_H

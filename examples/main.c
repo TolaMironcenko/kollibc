@@ -12,7 +12,7 @@ int main()
 
 	char inet_addr_to_terminal[sizeof(server_addr.sin_addr)];
 
-	inet_ntop(AF_INET, &server_addr.sin_addr, inet_addr_to_terminal, sizeof(server_addr));
+	inet_ntop(AF_INET, &(server_addr.sin_addr), inet_addr_to_terminal, sizeof(server_addr));
 
 	printf("sin_family = %d\nsin_port = %d\nsin_addr = %s\n", server_addr.sin_family, htons(server_addr.sin_port), inet_addr_to_terminal);
 
